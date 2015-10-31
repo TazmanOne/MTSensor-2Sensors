@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_action_bluetooth"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_bluetooth" />
+
+    <item
+        android:id="@+id/action_calibrate"
+        android:orderInCategory="100"
+        android:title="@string/action_calibrate"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_graph"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/action_graph"/>
+    <item
+        android:id="@+id/action_reset"
+        android:orderInCategory="100"
+        android:title="@string/action_reset"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="@string/action_help"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="@string/action_exit"
+        app:showAsAction="never" />
+</menu>

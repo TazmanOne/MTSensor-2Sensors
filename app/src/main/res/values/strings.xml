@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Metall Sensor</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_bluetooth">on/off</string>
+    <string name="logo">logo</string>
+    <string name="welcome">Для корректной работы приложения необходимо включить Bluetooth.Нажмите на кнопку в правом верхнем углу приложения.</string>
+    <string name="no_bt_support">Ваше устройство не поддрерживает Bluetooth.</string>
+    <string name="title_paired_devices">Сопряженные устройства</string>
+    <string name="title_other_devices">Другие устройства</string>
+    <string name="search_message">Поиск других устройств</string>
+    <string name="title_activity_device_control">Metall Sensor</string>
+    <string name="action_settings">Settings</string>
+    <string name="msg_not_connected">Нет подключения</string>
+    <string name="msg_connecting">Подключение</string>
+    <string name="msg_connected">Подключено</string>
+    <string name="msg_disconnected">Отключено</string>
+    <string name="empty_device_name">Новое устройство</string>
+    <string name="title_activity_device_list">Metall Sensor</string>
+    <string name="none_paired">Нет известных устройств</string>
+    <string name="select_device">Выбор устройства</string>
+    <string name="none_found">Не найдено</string>
+    <string name="action_calibrate">Калибровка</string>
+    <string name="action_reset">Сброс</string>
+    <string name="action_help">Справка</string>
+    <string name="action_exit">Выход</string>
+
+    <string name="current_value_label">Текущее значение</string>
+
+    <string name="temperature_text_1">Температура(дат.1)</string>
+    <string name="signal_text_1">Частицы износа (дат.1)</string>
+    <string name="signal_value_1"> </string >
+    <string name="temperature_value_1"> </string >
+    <string name="absolute_text_1">P0(дат1)</string>
+    <string name="absolute_value_1"> </string>
+
+    <string name="temperature_text_2">Температура(дат.2)</string>
+    <string name="signal_text_2">Частицы износа (дат.2)</string>
+    <string name="signal_value_2"> </string >
+    <string name="temperature_value_2">  </string >
+    <string name="absolute_text_2">P0(дат2)</string>
+    <string name="absolute_value_2"> </string>
+
+    <string name="super_signal_text">Усиленный сигнал</string>
+    <string name="supersignal_value"> </string >
+    <string name="action_graph">Графики</string >
+    <string name="absolute_value">Абсолютная величина</string>
+    <string name="edit_text">Double</string>
+    <string name="absolute_btn">Установить значение</string>
+
+    <string name="test">Test</string>
+    <string name="test_clear">Clear</string>
+    <string name="title_activity_graph">Metall Sensor</string>
+    <string name="get_first_date">С какого</string>
+    <string name="get_second_date">По какого</string>
+    <string name="label_first"> </string>
+    <string name="label_second"> </string>
+    <string name="type">Double</string>
+
+
+</resources>
