@@ -28,18 +28,21 @@
 
     <string name="current_value_label">Текущее значение</string>
 
-    <string name="temperature_text_1">Температура(дат.1)</string>
-    <string name="signal_text_1">Частицы износа (дат.1)</string>
-    <string name="signal_value_1"> </string >
-    <string name="temperature_value_1"> </string >
-    <string name="absolute_text_1">P0(дат1)</string>
+    <string name="name_sensor_1">Датчик 1</string>
+    <string name="name_sensor_2">Датчик 2</string>
+
+    <string name="temperature_text_1">Температура</string>
+    <string name="signal_text_1">Частицы износа</string>
+    <string name="signal_value_1"> 234 </string>
+    <string name="temperature_value_1"> 234 </string>
+    <string name="absolute_text_1">P0</string>
     <string name="absolute_value_1"> </string>
 
-    <string name="temperature_text_2">Температура(дат.2)</string>
-    <string name="signal_text_2">Частицы износа (дат.2)</string>
-    <string name="signal_value_2"> </string >
-    <string name="temperature_value_2">  </string >
-    <string name="absolute_text_2">P0(дат2)</string>
+    <string name="temperature_text_2">Температура</string>
+    <string name="signal_text_2">Частицы износа</string>
+    <string name="signal_value_2"> 234 </string>
+    <string name="temperature_value_2"> 234 </string>
+    <string name="absolute_text_2">P0</string>
     <string name="absolute_value_2"> </string>
 
     <string name="super_signal_text">Усиленный сигнал</string>

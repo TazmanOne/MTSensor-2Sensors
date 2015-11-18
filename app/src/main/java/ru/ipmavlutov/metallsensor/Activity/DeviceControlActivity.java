@@ -28,6 +28,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.lang.ref.WeakReference;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -326,11 +327,11 @@ public class DeviceControlActivity extends MainActivity {
                         break;
                     case SUPERSIGNAL:
                         byte[] a = (byte[]) msg.obj;
-                        if(a.length==13) {
+                        if (a.length == 19) {
                             byte[] temperature_1 = Arrays.copyOfRange(a, 0, 2);
-                            byte[] signal_1 = Arrays.copyOfRange(a, 2, 4);
-                            byte[] temperature_2 = Arrays.copyOfRange(a, 4, 6);
-                            byte[] signal_2 = Arrays.copyOfRange(a, 6, 8);
+                            byte[] signal_1 = Arrays.copyOfRange(a, 2, 7);
+                            byte[] temperature_2 = Arrays.copyOfRange(a, 7, 9);
+                            byte[] signal_2 = Arrays.copyOfRange(a, 9, 14);
 
 
                             //температура датчиков
@@ -341,12 +342,18 @@ public class DeviceControlActivity extends MainActivity {
                             temperature_value_2.setText(String.valueOf(temperature_rezult_2) + "  " + "\u00b0" + "C");
                             get_temperature2 = temperature_rezult_2;
                             //значение частиц
-                            double signal_rezult_1 = FindRudeSignal(Correction(GetSignal(signal_1), temperature_rezult_1), Z1);
-                            signal_value_1.setText(Double.toString(signal_rezult_1)+" " + "мг");
-                            get_signal1 = signal_rezult_1;
-                            double signal_rezult_2 = FindRudeSignal(Correction(GetSignal(signal_2), temperature_rezult_2), Z2);
-                            signal_value_2.setText(Double.toString(signal_rezult_2)+" " + "мг");
-                            get_signal2 = signal_rezult_2;
+                            // double signal_rezult_1 = FindRudeSignal(Correction(GetSignal(signal_1), temperature_rezult_1), Z1);
+                            // signal_value_1.setText(Double.toString(signal_rezult_1)+" " + "мг");
+                            try {
+                                signal_value_1.setText(new String(signal_1, "UTF-8") + " " + "мг");
+                                signal_value_2.setText(new String(signal_2, "UTF-8") + " " + "мг");
+                            } catch (UnsupportedEncodingException e) {
+                                e.printStackTrace();
+                            }
+                            // get_signal1 = signal_rezult_1;
+                            // double signal_rezult_2 = FindRudeSignal(Correction(GetSignal(signal_2), temperature_rezult_2), Z2);
+                            // signal_value_2.setText(Double.toString(signal_rezult_2)+" " + "мг");
+                            // get_signal2 = signal_rezult_2;
 
                             // String string = new String(a, 0, msg.arg1);
                             // signal_text_1.setText(Arrays.toString(a));
